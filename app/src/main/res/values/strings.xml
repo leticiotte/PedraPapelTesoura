@@ -3,10 +3,11 @@
 
     <!-- Strings used for fragments for navigation -->
     <string name="start_game_fragment_label">Pedra, papel e tesoura</string>
-    <string name="numbered_round_fragment_label">Rodada %s</string>
+    <string name="round_fragment_label">Rodada</string>
 
     <!-- Strings used for TextView -->
     <string name="players_quantity_tv">Quantidade de jogadores</string>
+    <string name="choose_an_option_tv">Escolha uma opção</string>
 
     <!-- Buttons names -->
     <string name="two_button">Dois</string>

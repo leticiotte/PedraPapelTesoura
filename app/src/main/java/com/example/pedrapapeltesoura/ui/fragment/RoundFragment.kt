@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.pedrapapeltesoura.R
@@ -16,9 +15,6 @@ class RoundFragment : Fragment(), ToolbarConfig {
     private var _binding: FragmentRoundBinding? = null
     private val binding get() = _binding!!
     private lateinit var toolbar: MaterialToolbar
-
-    private lateinit var twoPlayersBtn: Button
-    private lateinit var threePlayersBtn: Button
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -54,5 +50,4 @@ class RoundFragment : Fragment(), ToolbarConfig {
             findNavController().navigate(R.id.action_RoundFragment_to_StartGameFragment)
         }
     }
-
 }

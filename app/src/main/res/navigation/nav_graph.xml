@@ -18,7 +18,7 @@
     <fragment
         android:id="@+id/RoundFragment"
         android:name="com.example.pedrapapeltesoura.ui.fragment.RoundFragment"
-        android:label="@string/numbered_round_fragment_label"
+        android:label="@string/round_fragment_label"
         tools:layout="@layout/fragment_round">
 
         <action

@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">PedraPapelTesoura</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="start_game_fragment_label">Pedra, papel e tesoura</string>
+
+    <!-- Strings used for TextView -->
+    <string name="players_quantity_tv">Quantidade de jogadores</string>
+
+    <!-- Buttons names -->
+    <string name="two_button">Dois</string>
+    <string name="three_button">Três</string>
 </resources>

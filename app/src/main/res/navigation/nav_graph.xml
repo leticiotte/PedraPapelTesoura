@@ -14,4 +14,15 @@
             android:id="@+id/action_StartGameFragment_to_RoundFragment"
             app:destination="@id/RoundFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/RoundFragment"
+        android:name="com.example.pedrapapeltesoura.ui.fragment.RoundFragment"
+        android:label="@string/numbered_round_fragment_label"
+        tools:layout="@layout/fragment_round">
+
+        <action
+            android:id="@+id/action_RoundFragment_to_StartGameFragment"
+            app:destination="@id/StartGameFragment" />
+    </fragment>
 </navigation>

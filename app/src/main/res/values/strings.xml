@@ -3,6 +3,7 @@
 
     <!-- Strings used for fragments for navigation -->
     <string name="start_game_fragment_label">Pedra, papel e tesoura</string>
+    <string name="numbered_round_fragment_label">Rodada %s</string>
 
     <!-- Strings used for TextView -->
     <string name="players_quantity_tv">Quantidade de jogadores</string>
@@ -10,4 +11,9 @@
     <!-- Buttons names -->
     <string name="two_button">Dois</string>
     <string name="three_button">Três</string>
+
+    <!-- Strings used for image content descriptions -->
+    <string name="rock_img_content_description">Imagem da opção pedra</string>
+    <string name="paper_img_content_description">Imagem da opção papel</string>
+    <string name="scissor_img_content_description">Imagem da opção tesoura</string>
 </resources>

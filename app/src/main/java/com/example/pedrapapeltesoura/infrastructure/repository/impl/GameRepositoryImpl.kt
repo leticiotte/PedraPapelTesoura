@@ -1,4 +1,4 @@
-package com.example.pedrapapeltesoura.infrastructure.repository
+package com.example.pedrapapeltesoura.infrastructure.repository.impl
 
 import com.example.pedrapapeltesoura.domain.repository.GameRepository
 

@@ -11,18 +11,33 @@
         tools:layout="@layout/fragment_start_game">
 
         <action
-            android:id="@+id/action_StartGameFragment_to_RoundFragment"
-            app:destination="@id/RoundFragment" />
+            android:id="@+id/action_StartGameFragment_to_RoundTwoPlayersFragment"
+            app:destination="@id/RoundTwoPlayersFragment" />
+
+        <action
+            android:id="@+id/action_StartGameFragment_to_RoundThreePlayersFragment"
+            app:destination="@id/RoundThreePlayersFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/RoundFragment"
-        android:name="com.example.pedrapapeltesoura.ui.fragment.RoundFragment"
+        android:id="@+id/RoundTwoPlayersFragment"
+        android:name="com.example.pedrapapeltesoura.ui.fragment.RoundTwoPlayersFragment"
         android:label="@string/round_fragment_label"
-        tools:layout="@layout/fragment_round">
+        tools:layout="@layout/fragment_two_players_round">
 
         <action
-            android:id="@+id/action_RoundFragment_to_StartGameFragment"
+            android:id="@+id/action_RoundTwoPlayersFragment_to_StartGameFragment"
+            app:destination="@id/StartGameFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/RoundThreePlayersFragment"
+        android:name="com.example.pedrapapeltesoura.ui.fragment.RoundThreePlayersFragment"
+        android:label="@string/round_fragment_label"
+        tools:layout="@layout/fragment_three_players_round">
+
+        <action
+            android:id="@+id/action_RoundThreePlayersFragment_to_StartGameFragment"
             app:destination="@id/StartGameFragment" />
     </fragment>
 </navigation>

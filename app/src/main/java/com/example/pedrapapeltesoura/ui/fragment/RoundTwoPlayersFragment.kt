@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import android.view.LayoutInflater
 import android.view.View
-import android.view.View.OnClickListener
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
@@ -13,12 +12,12 @@ import androidx.core.widget.NestedScrollView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.pedrapapeltesoura.R
-import com.example.pedrapapeltesoura.databinding.FragmentRoundBinding
+import com.example.pedrapapeltesoura.databinding.FragmentTwoPlayersRoundBinding
 import com.example.pedrapapeltesoura.domain.model.interfaces.ToolbarConfig
 import com.google.android.material.appbar.MaterialToolbar
 
-class RoundFragment : Fragment(), ToolbarConfig {
-    private var _binding: FragmentRoundBinding? = null
+class RoundTwoPlayersFragment : Fragment(), ToolbarConfig {
+    private var _binding: FragmentTwoPlayersRoundBinding? = null
     private val binding get() = _binding!!
     private lateinit var toolbar: MaterialToolbar
     private lateinit var gameOptionsNestedScrollView: NestedScrollView
@@ -35,7 +34,7 @@ class RoundFragment : Fragment(), ToolbarConfig {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentRoundBinding.inflate(inflater, container, false)
+        _binding = FragmentTwoPlayersRoundBinding.inflate(inflater, container, false)
 
         setupInputs()
         setupLayouts()
@@ -46,6 +45,7 @@ class RoundFragment : Fragment(), ToolbarConfig {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        showGameOptionsNestedScrollView()
         findAndLinkToolbar()
         setupNavigationOnClickListener()
     }
@@ -61,25 +61,25 @@ class RoundFragment : Fragment(), ToolbarConfig {
 
     override fun setupNavigationOnClickListener() {
         toolbar.setNavigationOnClickListener {
-            findNavController().navigate(R.id.action_RoundFragment_to_StartGameFragment)
+            findNavController().navigate(R.id.action_RoundTwoPlayersFragment_to_StartGameFragment)
         }
     }
 
     private fun setupLayouts() {
-        gameOptionsNestedScrollView = binding.gameOptionsNestedScrollView
-        downCounterConstraintLayout = binding.downCounterConstraintLayout
-        roundResultNestedScrollView = binding.roundResultNestedScrollView
+        gameOptionsNestedScrollView = binding.gameOptions2PNestedScrollView
+        downCounterConstraintLayout = binding.downCounter2PConstraintLayout
+        roundResultNestedScrollView = binding.roundResult2PNestedScrollView
     }
 
     private fun setupInputs() {
-        downCounterTv = binding.downCounterTv
-        resultTitleTv = binding.resultTitleTv
+        downCounterTv = binding.downCounter2PTv
+        resultTitleTv = binding.resultTitle2PTv
     }
 
     private fun setupImageViews() {
-        rockImg = binding.rockImg
-        paperImg = binding.paperImg
-        scissorImg = binding.scissorImg
+        rockImg = binding.rock2PImg
+        paperImg = binding.paper2PImg
+        scissorImg = binding.scissor2PImg
 
 
         rockImg.setOnClickListener {

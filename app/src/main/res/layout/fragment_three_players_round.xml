@@ -6,10 +6,13 @@
     android:layout_height="match_parent"
     android:orientation="horizontal">
 
+    <!--    3P - Three Players-->
+
     <androidx.core.widget.NestedScrollView
-        android:id="@+id/gameOptionsNestedScrollView"
+        android:id="@+id/gameOptions3PNestedScrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:visibility="visible"
         tools:context=".ui.fragment.MembersFragment">
 
         <LinearLayout
@@ -18,32 +21,32 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/roundTitleTv"
+                android:id="@+id/roundTitle3PTv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="@string/choose_an_option_tv"
-                android:textSize="20sp"
                 android:layout_gravity="center"
-                android:gravity="center" />
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/choose_an_option_tv"
+                android:textSize="20sp" />
 
             <ImageView
-                android:id="@+id/rockImg"
+                android:id="@+id/rock3PImg"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:layout_marginTop="20dp"
                 android:layout_gravity="center"
+                android:layout_marginTop="20dp"
                 android:clickable="true"
                 android:contentDescription="@string/rock_img_content_description"
                 android:focusable="true"
                 app:srcCompat="@drawable/rock" />
 
             <ImageView
-                android:id="@+id/paperImg"
+                android:id="@+id/paper3PImg"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:layout_marginTop="20dp"
                 android:layout_gravity="center"
+                android:layout_marginTop="20dp"
                 android:backgroundTint="@color/black"
                 android:clickable="true"
                 android:contentDescription="@string/paper_img_content_description"
@@ -51,11 +54,11 @@
                 app:srcCompat="@drawable/paper" />
 
             <ImageView
-                android:id="@+id/scissorImg"
+                android:id="@+id/scissor3PImg"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:layout_marginTop="20dp"
                 android:layout_gravity="center"
+                android:layout_marginTop="20dp"
                 android:clickable="true"
                 android:contentDescription="@string/scissor_img_content_description"
                 android:focusable="true"
@@ -63,15 +66,14 @@
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/downCounterConstraintLayout"
+        android:id="@+id/downCounter3PConstraintLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone">
 
         <TextView
-            android:id="@+id/downCounterTv"
+            android:id="@+id/downCounter3PTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="50sp"
@@ -84,10 +86,10 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.core.widget.NestedScrollView
-        android:id="@+id/roundResultNestedScrollView"
-        android:visibility="gone"
+        android:id="@+id/roundResult3PNestedScrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:visibility="gone"
         tools:context=".ui.fragment.MembersFragment">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -95,7 +97,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/resultTitleTv"
+                android:id="@+id/resultTitle3PTv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -109,9 +111,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="20sp"
-                android:orientation="vertical"
                 android:gravity="center"
-                app:layout_constraintTop_toBottomOf="@+id/resultTitleTv">
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/resultTitle3PTv">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -121,7 +123,7 @@
                     android:padding="10sp">
 
                     <ImageView
-                        android:id="@+id/userChoiceImg"
+                        android:id="@+id/userChoice3PImg"
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:layout_centerVertical="true"
@@ -131,14 +133,14 @@
                         app:srcCompat="@drawable/rock" />
 
                     <TextView
-                        android:id="@+id/userLegendTv"
+                        android:id="@+id/userLegend3PTv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Você"
                         android:textSize="25sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/userChoiceImg" />
+                        app:layout_constraintTop_toBottomOf="@+id/userChoice3PImg" />
 
                 </LinearLayout>
 
@@ -157,7 +159,7 @@
                         android:paddingEnd="10sp">
 
                         <ImageView
-                            android:id="@+id/appPlayer1ChoiceImg"
+                            android:id="@+id/appPlayer1Choice3PImg"
                             android:layout_width="90dp"
                             android:layout_height="90dp"
                             android:layout_centerVertical="true"
@@ -167,14 +169,14 @@
                             app:srcCompat="@drawable/scissor" />
 
                         <TextView
-                            android:id="@+id/appPlayer1LegendTv"
+                            android:id="@+id/appPlayer1Legend3PTv"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Bot 1"
                             android:textSize="25sp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/userChoiceImg" />
+                            app:layout_constraintTop_toBottomOf="@+id/userChoice3PImg" />
 
                     </LinearLayout>
 
@@ -186,7 +188,7 @@
                         android:paddingStart="10sp">
 
                         <ImageView
-                            android:id="@+id/appPlayer2ChoiceImg"
+                            android:id="@+id/appPlayer2Choice3PImg"
                             android:layout_width="90dp"
                             android:layout_height="90dp"
                             android:layout_centerVertical="true"
@@ -197,21 +199,20 @@
                             app:srcCompat="@drawable/paper" />
 
                         <TextView
-                            android:id="@+id/appPlayer2LegendTv"
+                            android:id="@+id/appPlayer2Legend3PTv"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Bot 2"
                             android:textSize="25sp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/userChoiceImg" />
+                            app:layout_constraintTop_toBottomOf="@+id/userChoice3PImg" />
 
                     </LinearLayout>
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/nextRoundBtn"
-                    android:backgroundTint="@color/black"
+                    android:id="@+id/nextRound3PBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10sp"
@@ -219,19 +220,16 @@
                     android:textSize="18sp" />
 
                 <Button
-                    android:visibility="gone"
-                    android:id="@+id/finishGameBtn"
-                    android:backgroundTint="@color/black"
+                    android:id="@+id/finishGame3PBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10sp"
                     android:text="@string/finish_game_button"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:visibility="gone" />
 
 
             </LinearLayout>
-
-
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 </RelativeLayout>

@@ -2,7 +2,7 @@ package com.example.pedrapapeltesoura
 
 import android.app.Application
 import com.example.pedrapapeltesoura.domain.repository.GameRepository
-import com.example.pedrapapeltesoura.infrastructure.repository.GameRepositoryImpl
+import com.example.pedrapapeltesoura.infrastructure.repository.impl.GameRepositoryImpl
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.GlobalContext.startKoin
 import org.koin.dsl.module

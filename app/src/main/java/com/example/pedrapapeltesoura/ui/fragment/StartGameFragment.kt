@@ -44,20 +44,21 @@ class StartGameFragment  : Fragment() {
 
     private fun setupTwoPlayersBtnOnClickListener() {
         twoPlayersBtn.setOnClickListener {
-            openRoundFragment(2)
+            openRoundTwoPlayersFragment()
         }
     }
 
     private fun setupThreePlayersBtnOnClickListener() {
         threePlayersBtn.setOnClickListener {
-            openRoundFragment(3)
+            openRoundThreePlayersFragment()
         }
     }
 
-    private fun openRoundFragment(playersQuantity: Int) {
-        val bundle = Bundle()
-        bundle.putSerializable("playersQuantity", playersQuantity)
-        findNavController().navigate(R.id.action_StartGameFragment_to_RoundFragment, bundle)
+    private fun openRoundTwoPlayersFragment() {
+        findNavController().navigate(R.id.action_StartGameFragment_to_RoundTwoPlayersFragment)
     }
 
+    private fun openRoundThreePlayersFragment() {
+        findNavController().navigate(R.id.action_StartGameFragment_to_RoundThreePlayersFragment)
+    }
 }

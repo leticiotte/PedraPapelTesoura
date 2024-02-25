@@ -8,12 +8,17 @@
     <!-- Strings used for TextView -->
     <string name="players_quantity_tv">Quantidade de jogadores</string>
     <string name="choose_an_option_tv">Escolha uma opção</string>
+    <string name="you_tv">Você</string>
+    <string name="bot_1_tv">Bot 1</string>
+    <string name="bot_2_tv">Bot 2</string>
+    <string name="user_won_tv">Você ganhou!</string>
+    <string name="user_lost_tv">Você perdeu!</string>
+    <string name="tied_tv">Empatou!</string>
 
     <!-- Buttons names -->
     <string name="two_button">Dois</string>
     <string name="three_button">Três</string>
-    <string name="next_round_button">Próxima rodada</string>
-    <string name="finish_game_button">Finalizar jogo</string>
+    <string name="play_again_button">Jogar novamente</string>
 
     <!-- Strings used for image content descriptions -->
     <string name="rock_img_content_description">Imagem da opção pedra</string>

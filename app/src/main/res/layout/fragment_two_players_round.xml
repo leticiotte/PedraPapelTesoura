@@ -126,13 +126,14 @@
                         android:layout_height="match_parent"
                         android:gravity="center"
                         android:orientation="vertical"
-                        android:paddingStart="10sp">
+                        android:paddingStart="10sp"
+                        android:paddingEnd="10sp"
+                        >
 
                         <ImageView
                             android:id="@+id/userChoice2PImg"
                             android:layout_width="90dp"
                             android:layout_height="90dp"
-                            android:layout_centerVertical="true"
                             android:clickable="true"
                             android:contentDescription="@string/rock_img_content_description"
                             android:focusable="true"
@@ -142,7 +143,7 @@
                             android:id="@+id/userLegend2PTv"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Você"
+                            android:text="@string/you_tv"
                             android:textSize="25sp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -156,13 +157,13 @@
                         android:layout_height="match_parent"
                         android:gravity="center"
                         android:orientation="vertical"
+                        android:paddingStart="10sp"
                         android:paddingEnd="10sp">
 
                         <ImageView
                             android:id="@+id/appPlayerChoice2PImg"
                             android:layout_width="90dp"
                             android:layout_height="90dp"
-                            android:layout_centerVertical="true"
                             android:clickable="true"
                             android:contentDescription="@string/scissor_img_content_description"
                             android:focusable="true"
@@ -172,7 +173,7 @@
                             android:id="@+id/appPlayerLegend2PTv"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Bot 1"
+                            android:text="@string/bot_1_tv"
                             android:textSize="25sp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -182,21 +183,12 @@
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/nextRound2PBtn"
+                    android:id="@+id/playAgain2PBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10sp"
-                    android:text="@string/next_round_button"
+                    android:text="@string/play_again_button"
                     android:textSize="18sp" />
-
-                <Button
-                    android:id="@+id/finishGame2PBtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10sp"
-                    android:text="@string/finish_game_button"
-                    android:textSize="18sp"
-                    android:visibility="gone" />
 
 
             </LinearLayout>
